@@ -1,16 +1,14 @@
-<?php
-$title = "Site.com";
+<?php $title = "Site.com";
 $subtitle = "este é um site em PHP";
 ?>
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
 		<title>AboutMe</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="">
-		<meta name="author" content="">
+		<meta name="description" content="Trabalho de PHP">
+		<meta name="author" content="Vanessa Gasparetto">
 
 		<!-- Le styles -->
 		<link href="css/bootstrap.css" rel="stylesheet">
@@ -35,7 +33,7 @@ $subtitle = "este é um site em PHP";
 			<div class="navbar-inner">
 				<div class="container">
 					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
-					<a class="brand" href="#">Atividade Vanessa</a>
+					<a class="brand" href="home.php">Atividade Vanessa</a>
 					<div class="nav-collapse collapse">
 						<ul class="nav">
 							<li>
@@ -58,16 +56,13 @@ $subtitle = "este é um site em PHP";
 				</div>
 			</div>
 		</div>
-
+		?>
 		<div class="container">
-			<?php
-			$nome = "Vanessa Gasparetto";
-			?>
 			<h1>Apresentação</h1>
-			<img src="http://sphotos-e.ak.fbcdn.net/hphotos-ak-snc7/431147_396241773764586_1658725890_n.jpg" align="left" width="130px" height="130px" hspace="50" >
+			<img src="http://sphotos-b.ak.fbcdn.net/hphotos-ak-ash4/248874_430937623628334_1521448164_n.jpg" align="left" width="130px" height="130px" hspace="50" >
 			<ul>
 				<li>
-					Nome: <?php echo $nome; ?>
+					Nome: Vanesas Gasparetto.
 				</li>
 				<li>
 					Idade: 18 anos.
@@ -143,6 +138,20 @@ $subtitle = "este é um site em PHP";
 				</li>
 			</ul>
 
+			<ul>
+				<li>
+					E-mail: <a href="mailto:vanieu2009@hotmail.com">Hotmail</a>
+				</li>
+				<li>
+					Page: <a href="http://www.facebook.com/vanessagasparetto" target="_blank">Facebook</a>
+				</li>
+				<li>
+					Telefone: (49) 3433-9798
+				</li>
+				<li>
+					Celular: (49) 9972-1189
+				</li>
+			</ul>
 		</div>
 		<!-- /container -->
 
@@ -162,6 +171,6 @@ $subtitle = "este é um site em PHP";
 		<script src="../assets/js/bootstrap-collapse.js"></script>
 		<script src="../assets/js/bootstrap-carousel.js"></script>
 		<script src="../assets/js/bootstrap-typeahead.js"></script>
-
+		?>
 	</body>
 </html>

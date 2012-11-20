@@ -4,13 +4,13 @@ $subtitle = "este é um site em PHP";
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
 		<title>Pagina 2</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="">
-		<meta name="author" content="">
+		<meta name="description" content="Trabalho de PHP">
+		<meta name="author" content="Vanessa Gasparetto">
 
 		<!-- Le styles -->
 		<link href="css/bootstrap.css" rel="stylesheet">
@@ -63,7 +63,7 @@ $subtitle = "este é um site em PHP";
 
 			<h1 align="center">Lorem Ipsum</h1>
 			<p align="center">
-				
+
 				"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 				<br>
 				"Não há ninguém que ame a dor por si só, que a busque e queira tê-la, simplesmente por ser dor..."

@@ -4,13 +4,13 @@ $subtitle = "este é um site em PHP";
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?t-br  ?>">
 	<head>
 		<meta charset="utf-8">
 		<title>Contato</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="">
-		<meta name="author" content="">
+		<meta name="description" content="Trabalho de PHP">
+		<meta name="author" content="Vanessa Gasparetto">
 
 		<!-- Le styles -->
 		<link href="css/bootstrap.css" rel="stylesheet">
@@ -61,47 +61,51 @@ $subtitle = "este é um site em PHP";
 
 		<div class="container">
 
-			<h1>Contatos</h1>
-			<form>
+			<h1>Contato</h1>
+			<form action="formulario.php" method="post">
+				<fieldset>
+					<legend>Formulário de Contato</legend>
+					<!--<div class="formulario">
+						<p>
+						Nome:
+						<input type="nome"/>
+					</p>
+					</div>
+					<div class="formulario">
+				 <p>
+						E-mail:
+						<input type="email"/>
+					</p>
+
+				</div>
 				<div class="formulario">
 					<p>
-						Nome: <input id="nome"	/>
+						Mensagem:
+						<input id="mensagem" />
 					</p>
-					
-				</div>
 
-				<div class="formulario">
-					<p>
-						E-mail: <input id="emai" />
-					</p>
-					
 				</div>
+						-->
+					<input type="hiddden" name="pagina" value="contato" />	
+						
+					<label for="idNome">
+						Nome:</label>
+						<input type="text" name="nome" id="idNome"/>
+		
+				<label for="idEmail">
+						Mensavem:</label>
+						<input type="email" name="email" id="idEmail"/>
 
-				<div class="formulario">
-					<p>
-						Mensagem: <input id="mensagem" />
-					</p>
-					
-				</div>
-
-				<button name="Enviar" type="submit" >
+				
+				<label for="idMensagem"> Mensagem:</label>
+				<textarea name="mensagem" id="idMensagem" rows="3"></textarea>
+				</fieldset>
+				
+				<button class="btn btn-primary" name="Enviar" type="submit" >
 					Enviar
 				</button>
 			</form>
-			<ul>
-				<li>
-					E-mail: <a href="mailto:vanieu2009@hotmail.com">Hotmail</a>
-				</li>
-				<li>
-					Page: <a href="http://www.facebook.com/vanessagasparetto" target="_blank">Facebook</a>
-				</li>
-				<li>
-					Telefone: (49) 3433-9798
-				</li>
-				<li>
-					Celular: (49) 9972-1189
-				</li>
-			</ul>
+
 		</div>
 		<!-- /container -->
 
