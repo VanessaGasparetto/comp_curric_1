@@ -4,7 +4,7 @@ $subtitle = "este é um site em PHP";
 ?>
 
 <!DOCTYPE html>
-<html lang="<?t-br  ?>">
+<html lang="pt-BR">
 	<head>
 		<meta charset="utf-8">
 		<title>Contato</title>
@@ -85,15 +85,15 @@ $subtitle = "este é um site em PHP";
 					</p>
 
 				</div>
-						-->
-					<input type="hiddden" name="pagina" value="contato" />	
+					-->
+					<input type="hidden" name="pagina" value="contato" />	
 						
 					<label for="idNome">
 						Nome:</label>
 						<input type="text" name="nome" id="idNome"/>
 		
 				<label for="idEmail">
-						Mensavem:</label>
+						E-mail</label>
 						<input type="email" name="email" id="idEmail"/>
 
 				
@@ -101,7 +101,7 @@ $subtitle = "este é um site em PHP";
 				<textarea name="mensagem" id="idMensagem" rows="3"></textarea>
 				</fieldset>
 				
-				<button class="btn btn-primary" name="Enviar" type="submit" >
+				<button class="btn btn-primary">
 					Enviar
 				</button>
 			</form>
@@ -112,7 +112,7 @@ $subtitle = "este é um site em PHP";
 		<!-- Le javascript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="../assets/js/jquery.js"></script>
+		<!-- <script src="../assets/js/jquery.js"></script>
 		<script src="../assets/js/bootstrap-transition.js"></script>
 		<script src="../assets/js/bootstrap-alert.js"></script>
 		<script src="../assets/js/bootstrap-modal.js"></script>
@@ -124,7 +124,7 @@ $subtitle = "este é um site em PHP";
 		<script src="../assets/js/bootstrap-button.js"></script>
 		<script src="../assets/js/bootstrap-collapse.js"></script>
 		<script src="../assets/js/bootstrap-carousel.js"></script>
-		<script src="../assets/js/bootstrap-typeahead.js"></script>
+		<script src="../assets/js/bootstrap-typeahead.js"></script> -->
 
 	</body>
 </html>
