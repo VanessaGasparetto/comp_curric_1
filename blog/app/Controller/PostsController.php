@@ -35,9 +35,31 @@ class PostsController extends AppController {
 			//se conseguir salvar, mostrar mensagem e redirecionar para o Index
 			if ($this -> Post -> save($dadosDoFormulario)) {
 				//mostrar a mensagem
-				$this -> Session -> setFlash('A postagem foi inserida com sucesso');
+				$this -> Session -> setFlash('A postagem foi inserida com sucesso.');
 				$this -> redirect(array('action' => 'index'));
 			}
+		}
+	}
+
+	public function edit($id = null) {
+		$this -> Post -> id = $id;
+		if ($this -> request -> is('get')) {
+			$this -> request -> data = $this -> Post -> read();
+		} else {
+			if ($this -> Post -> save($this -> request -> data)) {
+				$this -> Session -> setFlash('Sua postagem foi salva.');
+				$this -> redirect(array('action' => 'index'));
+			}
+		}
+	}
+
+	public function delete($id) {
+		if (!$this -> request -> is('post')) {
+			throw new MethodNotAllowedException();
+		}
+		if ($this -> Post -> delete($id)) {
+			$this -> Session -> setFlash('A Postagem que possui o ID: ' . $id . ' Foi deletada.');
+			$this -> redirect(array('action' => 'index'));
 		}
 	}
 
