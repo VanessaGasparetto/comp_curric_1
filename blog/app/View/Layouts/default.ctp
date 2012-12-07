@@ -57,6 +57,10 @@
                       <li class="<?php echo $this->action == 'View' ? 'active' : ''; ?>">
                         <?php echo $this->Html->link(__('Postagens'),array('controller' => 'Posts','action' => 'index')) ?>
                       </li>
+                      
+                                            <li class="<?php echo $this->action == 'View' ? 'active' : ''; ?>">
+                        <?php echo $this->Html->link(__('Jogos'),array('controller' => 'Jogos','action' => 'index')) ?>
+                      </li>
 
 
                     </ul>
