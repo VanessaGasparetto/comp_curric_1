@@ -236,5 +236,7 @@ class UsersController extends AppController
     $this->render('/Users/change_password');
     
   }  
+  
 }
+
 ?>

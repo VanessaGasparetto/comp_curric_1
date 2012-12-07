@@ -29,9 +29,14 @@
 				<td><?php echo $post["Post"]["body"]?></td>
 				<td><?php echo $post["Post"]["created"]?></td>
 				<td><?php echo $post["Post"]["modified"]?></td>
-				<td> <?php echo $this->Html->link("Visualizar", array('controller'=>'posts', 'action' => 'view', $post["Post"]["id"]))?></td>
-				<td> <?php echo $this->Html->link("Editar", array('controller' => 'posts', 'action' => 'edit',$post["Post"]["id"]))?></td>
-				<td> <?php echo $this->Form->postLink("Remover", array('controller' => 'posts', 'action' => 'delete', $post["Post"]["id"]))?></td>
+				<td> <?php echo $this->Html->link("Visualizar", array('controller'=>'posts', 'action' => 'view', $post["Post"]["id"]), 
+						array('class' => 'btn'))?></td>
+						
+				<td> <?php echo $this->Html->link("Editar", array('controller' => 'posts', 'action' => 'edit',$post["Post"]["id"]),
+						array('class' => 'btn btn-primary'))?></td>
+						
+				<td> <?php echo $this->Form->postLink("Remover", array('controller' => 'posts', 'action' => 'delete', $post["Post"]["id"]),
+						array('class' => 'btn btn-primary'))?></td>
 			</tr>
 		<?php endforeach ?>
 	</tbody>

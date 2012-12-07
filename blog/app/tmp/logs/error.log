@@ -331,3 +331,82 @@
 #3 C:\xampp\htdocs\vanessa\blog\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
 #4 C:\xampp\htdocs\vanessa\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2012-12-06 22:07:57 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [C:\xampp\htdocs\vanessa\blog\app\View\Posts\index.ctp, line 37]
+2012-12-06 22:07:57 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+#0 C:\xampp\htdocs\vanessa\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 37, Array)
+#2 C:\xampp\htdocs\vanessa\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 37, Array)
+#3 C:\xampp\htdocs\vanessa\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-06 22:44:27 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 C:\xampp\htdocs\vanessa\blog\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\vanessa\blog\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\vanessa\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-06 22:45:23 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 C:\xampp\htdocs\vanessa\blog\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\vanessa\blog\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\vanessa\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-06 22:48:28 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 C:\xampp\htdocs\vanessa\blog\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\vanessa\blog\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\vanessa\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-06 22:49:36 Error: [MissingViewException] View file "C:\xampp\htdocs\vanessa\blog\app\View\Users\index.ctp" is missing.
+#0 C:\xampp\htdocs\vanessa\blog\lib\Cake\View\View.php(472): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\vanessa\blog\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\vanessa\blog\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\xampp\htdocs\vanessa\blog\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\vanessa\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-12-06 22:52:32 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 C:\xampp\htdocs\vanessa\blog\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\vanessa\blog\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\vanessa\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-06 23:12:57 Error: [MissingControllerException] Controller class JogosController could not be found.
+#0 C:\xampp\htdocs\vanessa\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-06 23:16:19 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\vanessa\blog\app\Controller\JogosController.php, line 12]
+2012-12-06 23:16:19 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 C:\xampp\htdocs\vanessa\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 12, Array)
+#2 C:\xampp\htdocs\vanessa\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 12, Array)
+#3 C:\xampp\htdocs\vanessa\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-06 23:16:47 Error: [MissingTableException] Table jogos for model Jogo was not found in datasource default.
+#0 C:\xampp\htdocs\vanessa\blog\lib\Cake\Model\Model.php(3180): Model->setSource('jogos')
+#1 C:\xampp\htdocs\vanessa\blog\lib\Cake\Model\Model.php(2631): Model->getDataSource()
+#2 C:\xampp\htdocs\vanessa\blog\app\Controller\JogosController.php(12): Model->find('all')
+#3 [internal function]: JogosController->index()
+#4 C:\xampp\htdocs\vanessa\blog\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(JogosController), Array)
+#5 C:\xampp\htdocs\vanessa\blog\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\vanessa\blog\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(JogosController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\xampp\htdocs\vanessa\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-06 23:17:57 Error: [MissingTableException] Table jogos for model Jogo was not found in datasource default.
+#0 C:\xampp\htdocs\vanessa\blog\lib\Cake\Model\Model.php(3180): Model->setSource('jogos')
+#1 C:\xampp\htdocs\vanessa\blog\lib\Cake\Model\Model.php(2631): Model->getDataSource()
+#2 C:\xampp\htdocs\vanessa\blog\app\Controller\JogosController.php(12): Model->find('all')
+#3 [internal function]: JogosController->index()
+#4 C:\xampp\htdocs\vanessa\blog\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(JogosController), Array)
+#5 C:\xampp\htdocs\vanessa\blog\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\vanessa\blog\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(JogosController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\xampp\htdocs\vanessa\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-06 23:21:25 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 C:\xampp\htdocs\vanessa\blog\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\vanessa\blog\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\vanessa\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-06 23:28:25 Error: Fatal Error (1): Call to a member function save() on a non-object in [C:\xampp\htdocs\vanessa\blog\app\Controller\JogosController.php, line 22]
+2012-12-06 23:28:25 Error: [FatalErrorException] Call to a member function save() on a non-object
+#0 C:\xampp\htdocs\vanessa\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 22, Array)
+#2 C:\xampp\htdocs\vanessa\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 22, Array)
+#3 C:\xampp\htdocs\vanessa\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
