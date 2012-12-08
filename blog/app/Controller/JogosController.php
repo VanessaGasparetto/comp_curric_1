@@ -14,7 +14,7 @@
     }
 
 	public function add() {
-        if ($this->request->is('jogo')) {
+        if ($this->request->is('post')) {
             if ($this->Jogo->save($this->request->data)) {
                 $this->Session->setFlash('Seu jogo foi Salvo!');
                 $this->redirect(array('action' => 'index'));
@@ -34,7 +34,7 @@
     }
 }
 	public function delete($id) {
-		if (!$this -> request -> is('jogo')) {
+		if (!$this -> request -> is('post')) {
 			throw new MethodNotAllowedException();
 		}
 		if ($this -> Jogo -> delete($id)) {
